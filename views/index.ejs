@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="adoptionBlog">
+  <head>
+    <title>VIDA Lifestyle Blog</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+<!-- files for development -->
+    <script src="/javascripts/angular.js" ></script>
+    <script src="/javascripts/angular-route.min.js" ></script>
+    <script src="/javascripts/app.js" ></script>
+<!-- app.js and ctrl files -->
+    <script src="/javascripts/app.PostsCtrl.js"></script>
+    <script src="/javascripts/app.AdminCreateCtrl.js"></script>
+    <script src="/javascripts/app.AdminDeleteCtrl.js"></script>
+    <script src="/javascripts/app.AccountCreateCtrl.js"></script>
+    <script src="/javascripts/app.LoginCtrl.js"></script>
+    <script src="/javascripts/app.RegisterCtrl.js" charset="utf-8"></script>
+    <script src="/javascripts/app.CommentsCtrl.js" charset="utf-8"></script>
+    <script src="/javascripts/app.HomeCtrl.js" charset="utf-8"></script>
+    <script src="/javascripts/app.AdminCtrl.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+  <header>
+    <img src="/images/Coming-Soon2.jpg" alt="">
+    <hr>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/admin">Remove Post</a></li>
+        <li><a href="/create">Post Reply </a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/account">Log IN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <hr>
+  </header>
+
+  <!-- this is similar to yield/body in erb/hbs -->
+  <div ng-view> </div>
+    <hr>
+  <footer>
+    @copy 2016 WDI Anita Arnold Victoria!
+  </footer>
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<h5>Admin: Comment to a post</h5>
+
+{{message}}
+<!-- this is the '/create' page from '/' -->
+<form ng-submit="createPost(title, content, tags)">
+    <input type="text" ng-model="title" placeholder="Blog title here">
+    <input type="text" ng-model="content" placeholder="Blog post content goes here">
+    <input type="text" ng-model="tags" placeholder="Add,tags,like,so,we,can,csv,them">
+    <input type="submit" value="Add Post">
+</form>
+<hr>
+<form ng-submit="category(id, cat_name)" method="post">
+    <select type="text" ng-model="category">
+    <option value="none">---Please select---</option>
+    <option value="1">Places</option>
+    <option value="2">Gift</option>
+    <option value="3">Beauty</option>
+    <option value="4">Travel</option>
+    </select>
+    <br>
+<label class="file">
+<!-- COLUMNS TO ENTER IN IMAGE TABLE-id, src, caption, post_id, is_post_image, user_id --> -->
+        <input type="file" id="inputFileToLoad" onchange="readURL(this)" >
+        <input type="hidden" id="myImage" name="image" value="">
+
+        <span class="file-custom"></span><button type="button" class="btn btn-primary btn-xs">Upload</button>
+      </label>
